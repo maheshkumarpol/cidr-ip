@@ -1,1 +1,5 @@
+User-agent: *
+Allow: /
+
 Sitemap: https://cidr-ip.pages.dev/sitemap.xml
+
