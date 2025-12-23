@@ -1,0 +1,95 @@
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #0b1220;
+  color: #e5e7eb;
+}
+
+.container {
+  max-width: 760px;
+  margin: auto;
+  padding: 20px;
+}
+
+header { margin-bottom: 16px; }
+
+.card {
+  background: #0f1a2d;
+  border: 1px solid #22324f;
+  border-radius: 14px;
+  padding: 16px;
+  margin: 14px 0;
+}
+
+label { font-weight: 600; }
+
+input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #2a3e63;
+  background: #0b1220;
+  color: #e5e7eb;
+}
+
+.results {
+  width: 100%;
+  margin-top: 12px;
+  border-collapse: collapse;
+}
+
+.results td {
+  padding: 8px;
+  border-bottom: 1px solid #22324f;
+}
+
+.actions {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #2a3e63;
+  background: #132443;
+  color: #e5e7eb;
+  cursor: pointer;
+}
+
+button:hover { background: #173057; }
+
+.ip-list {
+  max-height: 300px;
+  overflow: auto;
+  background: #020617;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  white-space: pre;
+}
+
+.pagination {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ad-slot {
+  margin: 16px 0;
+  text-align: center;
+}
+
+.ad-placeholder {
+  border: 1px dashed #334155;
+  padding: 16px;
+  color: #94a3b8;
+}
+
+.error { color: #fca5a5; margin-top: 8px; }
+.muted { color: #a5b4fc; }
+.footer { text-align: center; margin-top: 20px; }

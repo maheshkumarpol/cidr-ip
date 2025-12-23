@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CIDR to IP Range Calculator</title>
+  <meta name="description" content="CIDR to IP range calculator. List all IPs with pagination and download as text." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- GOOGLE ADSENSE (ENABLE AFTER APPROVAL)
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    data-ad-client="ca-pub-XXXXXXXXXXXX"
+    crossorigin="anonymous"></script>
+  -->
+</head>
+
+<body>
+<main class="container">
+
+<header>
+  <h1>CIDR to IP Range Calculator</h1>
+  <p>Calculate subnet details, list IPs safely, and download results.</p>
+</header>
+
+<!-- AD SLOT #1 -->
+<div class="ad-slot">
+  <div class="ad-placeholder">AdSense Ad</div>
+</div>
+
+<section class="card">
+  <label for="cidrInput">CIDR Block</label>
+  <input id="cidrInput" placeholder="192.168.1.0/24" />
+
+  <div id="error" class="error"></div>
+
+  <table class="results">
+    <tr><td>Network</td><td id="network">—</td></tr>
+    <tr><td>First IP</td><td id="first">—</td></tr>
+    <tr><td>Last IP</td><td id="last">—</td></tr>
+    <tr><td>Broadcast</td><td id="broadcast">—</td></tr>
+    <tr><td>Total IPs</td><td id="total">—</td></tr>
+    <tr><td>Usable IPs</td><td id="usable">—</td></tr>
+  </table>
+
+  <div class="actions">
+    <button id="downloadBtn">Download IPs (.txt)</button>
+    <button id="clearBtn">Clear</button>
+  </div>
+</section>
+
+<section class="card">
+  <h2>IP Address List</h2>
+  <div id="ipWarning" class="muted"></div>
+
+  <pre id="ipList" class="ip-list"></pre>
+
+  <div class="pagination">
+    <button id="prevPage">Prev</button>
+    <span id="pageInfo"></span>
+    <button id="nextPage">Next</button>
+  </div>
+</section>
+
+<!-- AD SLOT #2 -->
+<div class="ad-slot">
+  <div class="ad-placeholder">AdSense Ad</div>
+</div>
+
+<section class="card">
+  <h2>Recommended Tools</h2>
+  <p class="muted">Some links may be affiliate links.</p>
+  <ul>
+    <li><a href="#" rel="nofollow sponsored">Networking Lab Courses</a></li>
+    <li><a href="#" rel="nofollow sponsored">Cloud Certification Prep</a></li>
+    <li><a href="#" rel="nofollow sponsored">VPN for Engineers</a></li>
+  </ul>
+</section>
+
+<footer class="footer">
+  <p>
+    <a href="about.html">About</a> |
+    <a href="privacy.html">Privacy</a> |
+    <a href="contact.html">Contact</a>
+  </p>
+  <p>© <span id="year"></span> CIDR-IP</p>
+</footer>
+
+</main>
+<script src="script.js"></script>
+</body>
+</html>
